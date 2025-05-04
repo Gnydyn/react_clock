@@ -16,12 +16,12 @@ export class App extends React.Component {
 
   timerId = 0;
 
-  handleRightClick = (event: MouseEvent) => {
+  handleRightClick = (event: globalThis.MouseEvent) => {
     event.preventDefault();
     this.setState({ hasClock: false });
   };
 
-  handleLeftClick = (event: MouseEvent) => {
+  handleLeftClick = (event: globalThis.MouseEvent) => {
     event.preventDefault();
     this.setState({ hasClock: true });
   };
